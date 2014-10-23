@@ -26,12 +26,13 @@
 
 	<script type="text/javascript" src="./jquery.js"></script>
 	<script type="text/javascript" src="./handlebars.js"></script>
+	<script type="text/javascript" src="./victorias-secrets.js"></script>
 	<script type="text/javascript">
 		$('#fetch_github_profile').on('click', function (){ 
 			var profile_name = $('#profile_name').val();
 			var source = $('#github_profiles').html();
 			var template = Handlebars.compile(source);
-			$.get('https://api.github.com/users/' + profile_name, function(gitHubProfile) {
+			$.get('https://api.github.com/users/' + profile_name + '?client_id=b7734132a7f79e1cc95b&client_secret=' + lolcatz, function(gitHubProfile) {
 				$('#profiles').append(template(gitHubProfile));
 			});
 		});
