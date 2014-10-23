@@ -1,0 +1,1 @@
+Building a little app to look up and display the profiles of Github users. Uses JavaScript, JQuery, Handlebars, and the Github/Users API.
