@@ -1,0 +1,22 @@
+body {
+	background-color: white;
+	text-align: center;
+}
+
+h2, article {
+	color: pink;
+	font-family: 'Arial';
+}
+
+#avatar {
+	opacity: .5;
+	width: 25%;
+}
+
+#avatar:hover {
+	opacity: 1;
+}
+
+section {
+	border: black;
+}

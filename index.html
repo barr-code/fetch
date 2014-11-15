@@ -1,5 +1,5 @@
 <html>
-<head></head>
+<head><link rel="stylesheet" href="./public/css/main.css" type="text/css" media="all" /></head>
 <body>
 	<main>
 		<section>
@@ -11,16 +11,16 @@
 		</main>
 
 		<template id="github_profiles">
-			<article>
+			<section>
 				<header>
-					<img src="{{avatar_url}}"/>
+					<a href={{html_url}}><img id="avatar" src="{{avatar_url}}"/></a>
 					<h2>{{name}}</h2>
-					<h2>{{login}}</h2>
+					<a href={{html_url}}><h2>{{login}}</h2></a>
 				</header>
 				<p>
-					<strong id="followers">Followers: {{followers}}</strong>
-					<strong id="public_repos">Public repos: {{public_repos}}</strong> 
-			</article>
+					<h2 id="followers">Followers: {{followers}}</h2>
+					<h2 id="public_repos">Public repos: {{public_repos}}</h2> 
+			</section>
 		</template>
 
 
